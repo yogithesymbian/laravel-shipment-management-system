@@ -1,5 +1,14 @@
 BEGIN
+-- menampilkan data tahun 2019,
+-- tetapi data yang sedang tidak pending , dan
+-- total biaya pengiriman di atas 100ribu rupiah
+-- yang dilayani oleh pegawai perempuan dan masih berumur 20 – 21 tahun
+-- beserta data barang yang sensitif terhadap benturan (kaca dan plastik)
+-- dan contact pegawai yang bisa di hubungi dan contact pengirim
 
+-- tidak lain adalah ( nama_pegawai, tgl_lahir(umur), gender perempuan, nomor_pegawai dan pengirim,
+-- jenis barang, kode pengiriman manifest dan detail biaya besert total biaya
+-- dan posisi barang serta waktu pengiriman dan keterangan tracking
 		SELECT
 			pegawaiku.*,
 			whosend.*,
