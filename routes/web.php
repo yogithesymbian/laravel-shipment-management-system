@@ -1,4 +1,5 @@
 <?php
+use Laraspace\Pengirim;
 
 /*
 |--------------------------------------------------------------------------
@@ -11,6 +12,10 @@
 Route::get('/', [
     'as' => 'home', 'uses' => 'FrontendController@home'
 ]);
+
+Route::get('api1', function () {
+    echo Pengirim::with('trackings')->get();
+});
 
 /*
 |--------------------------------------------------------------------------

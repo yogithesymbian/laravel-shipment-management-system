@@ -77,7 +77,7 @@
         <div class="col-lg-12 col-xl-6 mt-2">
             <div class="card">
                 <div class="card-header">
-                    <h6><i class="icon-fa icon-fa-shopping-cart text-danger"></i> Recent Orders</h6>
+                    <h6><i class="icon-fa icon-fa-shopping-cart text-danger"></i> Recent Senders</h6>
                 </div>
                 <div class="card-body">
                     <table class="table">
@@ -90,18 +90,18 @@
                             </tr>
                         </thead>
                         <tbody>
+                            @foreach ($pengirims as $pengirim)
                             <tr>
-                                <td>Walter White</td>
+                                <td> {{ $pengirim->nama_pengirim }} </td>
+                                <td> </td>
+                                <td> 555$ </td>
+                                <td><a href="#" class="btn btn-default btn-xs">View</a></td>
+                                {{-- <td>Walter White</td>
                                 <td>05/12/2016</td>
                                 <td>555$</td>
-                                <td><a href="#" class="btn btn-default btn-xs">View</a></td>
+                                <td><a href="#" class="btn btn-default btn-xs">View</a></td> --}}
                             </tr>
-                            <tr>
-                                <td>Hank Hill</td>
-                                <td>05/12/2016</td>
-                                <td>222$</td>
-                                <td><a href="#" class="btn btn-default btn-xs">View</a></td>
-                            </tr>
+                            @endforeach
                         </tbody>
                     </table>
                 </div>

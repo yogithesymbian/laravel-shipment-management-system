@@ -2,6 +2,7 @@
 namespace Laraspace\Http\Controllers;
 
 use Laraspace\Tracking;
+use Laraspace\Pengirim;
 
 class DashboardController extends Controller
 {
@@ -18,7 +19,14 @@ class DashboardController extends Controller
          */
         $pendings = Tracking::where(['keterangan' => 'pending'])->count();
         $shipments = Tracking::where(['keterangan' => 'terkirim'])->count();
-        return view('admin.dashboard.basic')->with('pendings', $pendings)->with('shipments', $shipments);
+        $pengirims = Pengirim::all();
+        // laters array
+        return view('admin.dashboard.basic')
+            ->with('pendings', $pendings)
+            ->with('shipments', $shipments)
+            ->with('pengirims', $pengirims)
+            // end
+        ;
     }
 
     public function ecommerce()
