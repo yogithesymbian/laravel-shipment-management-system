@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Laraspace - Laravel Admin</title>
+    <title>SHIPMENT - MS Admin</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
     <script src="{{asset('/assets/admin/js/core/pace.js')}}"></script>
     <link href="{{ mix('/assets/admin/css/laraspace.css') }}" rel="stylesheet" type="text/css">
@@ -12,6 +13,7 @@
     @include('admin.layouts.partials.favicons')
     @yield('styles')
 </head>
+
 <body class="layout-default skin-default">
     @include('admin.layouts.partials.laraspace-notifs')
 
@@ -24,7 +26,7 @@
 
         @include('admin.layouts.partials.footer')
         @if(config('laraspace.skintools'))
-            @include('admin.layouts.partials.skintools')
+        @include('admin.layouts.partials.skintools')
         @endif
     </div>
 
@@ -33,4 +35,5 @@
     <script src="{{mix('/assets/admin/js/core/app.js')}}"></script>
     @yield('scripts')
 </body>
+
 </html>

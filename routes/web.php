@@ -23,7 +23,7 @@ Route::get('/', [
 
 Route::group([
     'prefix' => 'admin',
-//    'middleware' => 'admin'
+    'middleware' => 'admin'
 ], function () {
 
     // Dashboard
@@ -111,11 +111,11 @@ Route::group([
         ]);
 
         Route::get('nestable-list', [
-            'as'=>'admin.components.nestableList', 'uses'=>'Demo\PagesController@nestableList'
+            'as' => 'admin.components.nestableList', 'uses' => 'Demo\PagesController@nestableList'
         ]);
 
         Route::get('nestable-tree', [
-            'as'=>'admin.components.nestableTree', 'uses'=>'Demo\PagesController@nestableTree'
+            'as' => 'admin.components.nestableTree', 'uses' => 'Demo\PagesController@nestableTree'
         ]);
 
         Route::get('image-cropper', [

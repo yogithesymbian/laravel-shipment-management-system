@@ -29,12 +29,14 @@ return [
                 ],
                 [
                     'title' => 'Ecommerce',
-                    'link' => '/admin/dashboard/ecommerce',
+                    // 'link' => '/admin/dashboard/ecommerce',
+                    'link' => '/admin/dashboard/#',
                     'active' => 'admin/dashboard/ecommerce',
                 ],
                 [
                     'title' => 'Finance',
-                    'link' => '/admin/dashboard/finance',
+                    // 'link' => '/admin/dashboard/finance',
+                    'link' => '/admin/dashboard/#',
                     'active' => 'admin/dashboard/finance',
                 ]
             ]
@@ -122,14 +124,14 @@ return [
                     'active' => 'admin/components/notifications',
                 ],
                 [
-                    'title'=>' Nestable List',
-                    'link'=>'/admin/components/nestable-list',
-                    'active'=>'admin/components/nestable-list',
+                    'title' => ' Nestable List',
+                    'link' => '/admin/components/nestable-list',
+                    'active' => 'admin/components/nestable-list',
                 ],
                 [
-                    'title'=>'Nestable Tree',
-                    'link'=>'/admin/components/nestable-tree',
-                    'active'=>'admin/components/nestable-tree',
+                    'title' => 'Nestable Tree',
+                    'link' => '/admin/components/nestable-tree',
+                    'active' => 'admin/components/nestable-tree',
                 ],
                 [
                     'title' => 'Image Cropper',
@@ -499,14 +501,14 @@ return [
                     'active' => 'admin/components/notifications',
                 ],
                 [
-                    'title'=>' Nestable List',
-                    'link'=>'/admin/components/nestable-list',
-                    'active'=>'admin/components/nestable-list',
+                    'title' => ' Nestable List',
+                    'link' => '/admin/components/nestable-list',
+                    'active' => 'admin/components/nestable-list',
                 ],
                 [
-                    'title'=>'Nestable Tree',
-                    'link'=>'/admin/components/nestable-tree',
-                    'active'=>'admin/components/nestable-tree',
+                    'title' => 'Nestable Tree',
+                    'link' => '/admin/components/nestable-tree',
+                    'active' => 'admin/components/nestable-tree',
                 ],
                 [
                     'title' => 'Image Cropper',
