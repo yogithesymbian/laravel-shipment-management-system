@@ -14,11 +14,14 @@
                 </span>
             </a>
         </div>
+        {{--
+            Tracking PENDING->count()
+            --}}
         <div class="col-md-12 col-lg-6 col-xl-3">
             <a class="dashbox" href="#">
                 <i class="icon-fa icon-fa-ticket text-success"></i>
                 <span class="title">
-                    200
+                    {{ $trackings }}
                 </span>
                 <span class="desc">
                     PENDING

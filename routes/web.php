@@ -20,7 +20,6 @@ Route::get('/', [
 | To Enable Authentication just remove the comment from Admin Middleware
 |
 */
-
 Route::group([
     'prefix' => 'admin',
     'middleware' => 'admin'
