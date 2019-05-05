@@ -7,7 +7,7 @@
             <a class="dashbox" href="#">
                 <i class="icon-fa icon-fa-envelope text-primary"></i>
                 <span class="title">
-                    35
+                    0
                 </span>
                 <span class="desc">
                     Mails
@@ -21,7 +21,7 @@
             <a class="dashbox" href="#">
                 <i class="icon-fa icon-fa-ticket text-success"></i>
                 <span class="title">
-                    {{ $trackings }}
+                    {{ $pendings }}
                 </span>
                 <span class="desc">
                     PENDING
@@ -32,7 +32,7 @@
             <a class="dashbox" href="#">
                 <i class="icon-fa icon-fa-shopping-cart text-danger"></i>
                 <span class="title">
-                    100
+                    {{ $shipments }}
                 </span>
                 <span class="desc">
                     SHIPMENT
@@ -43,7 +43,7 @@
             <a class="dashbox" href="#">
                 <i class="icon-fa icon-fa-comments text-info"></i>
                 <span class="title">
-                    59
+                    0
                 </span>
                 <span class="desc">
                     Comments
