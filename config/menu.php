@@ -40,6 +40,53 @@ return [
                     'active' => 'admin/dashboard/finance',
                 ]
             ]
+        ], [
+            'title' => 'Forms Client',
+            'link' => '#',
+            'active' => 'admin/forms*',
+            'icon' => 'icon-fa icon-fa-rocket',
+            'children' => [
+                [
+                    'title' => 'Form Pengirim',
+                    'link' => '/admin/forms/general',
+                    'active' => 'admin/forms/general',
+                ],
+                [
+                    'title' => 'Form Barang',
+                    'link' => '/admin/forms/advanced',
+                    'active' => 'admin/forms/advanced',
+                ],
+                [
+                    'title' => 'Form Penerima',
+                    'link' => '/admin/forms/layouts',
+                    'active' => 'admin/forms/layouts',
+                ],
+                [
+                    'title' => 'Form Jenis Pengiriman',
+                    'link' => '/admin/forms/validation',
+                    'active' => 'admin/forms/validation',
+                ],
+                [
+                    'title' => 'Form Tarif',
+                    'link' => '/admin/forms/wizards',
+                    'active' => 'admin/forms/wizards',
+                ],
+                [
+                    'title' => 'Form Wizard 2',
+                    'link' => '/admin/forms/wizards-2',
+                    'active' => 'admin/forms/wizards-2',
+                ],
+                [
+                    'title' => 'Form Wizard 3',
+                    'link' => '/admin/forms/wizards-3',
+                    'active' => 'admin/forms/wizards-3',
+                ],
+                [
+                    'title' => 'Editors',
+                    'link' => '/admin/forms/editors',
+                    'active' => 'admin/forms/editors',
+                ],
+            ]
         ],
         [
             'title' => 'Form Client',
@@ -254,54 +301,7 @@ return [
                 ],
             ]
         ],
-        [
-            'title' => 'Forms',
-            'link' => '#',
-            'active' => 'admin/forms*',
-            'icon' => 'icon-fa icon-fa-rocket',
-            'children' => [
-                [
-                    'title' => 'General Elements',
-                    'link' => '/admin/forms/general',
-                    'active' => 'admin/forms/general',
-                ],
-                [
-                    'title' => 'Advanced Elements',
-                    'link' => '/admin/forms/advanced',
-                    'active' => 'admin/forms/advanced',
-                ],
-                [
-                    'title' => 'Form Layouts',
-                    'link' => '/admin/forms/layouts',
-                    'active' => 'admin/forms/layouts',
-                ],
-                [
-                    'title' => 'Form Validation',
-                    'link' => '/admin/forms/validation',
-                    'active' => 'admin/forms/validation',
-                ],
-                [
-                    'title' => 'Form Wizard',
-                    'link' => '/admin/forms/wizards',
-                    'active' => 'admin/forms/wizards',
-                ],
-                [
-                    'title' => 'Form Wizard 2',
-                    'link' => '/admin/forms/wizards-2',
-                    'active' => 'admin/forms/wizards-2',
-                ],
-                [
-                    'title' => 'Form Wizard 3',
-                    'link' => '/admin/forms/wizards-3',
-                    'active' => 'admin/forms/wizards-3',
-                ],
-                [
-                    'title' => 'Editors',
-                    'link' => '/admin/forms/editors',
-                    'active' => 'admin/forms/editors',
-                ],
-            ]
-        ],
+
         [
             'title' => 'Gallery',
             'link' => '#',

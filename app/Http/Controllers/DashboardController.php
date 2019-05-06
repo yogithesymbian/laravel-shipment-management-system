@@ -3,6 +3,7 @@ namespace Laraspace\Http\Controllers;
 
 use Laraspace\Tracking;
 use Laraspace\Pengirim;
+use Laraspace\Manifest;
 
 class DashboardController extends Controller
 {
@@ -19,6 +20,7 @@ class DashboardController extends Controller
          */
         $pendings = Tracking::where(['keterangan' => 'pending'])->count();
         $shipments = Tracking::where(['keterangan' => 'terkirim'])->count();
+        $manifests = Manifest::count();
         $pengirims = Pengirim::all();
         $trackings = Tracking::all();
         // laters array
@@ -27,6 +29,7 @@ class DashboardController extends Controller
             ->with('shipments', $shipments)
             ->with('pengirims', $pengirims)
             ->with('trackings', $trackings)
+            ->with('manifests', $manifests)
             // end
         ;
     }

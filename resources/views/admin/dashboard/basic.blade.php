@@ -7,10 +7,10 @@
             <a class="dashbox" href="#">
                 <i class="icon-fa icon-fa-envelope text-primary"></i>
                 <span class="title">
-                    0
+                    {{ $manifests }}
                 </span>
                 <span class="desc">
-                    Mails
+                    MANIFEST
                 </span>
             </a>
         </div>
@@ -30,7 +30,7 @@
         </div>
         <div class="col-md-12 col-lg-6 col-xl-3">
             <a class="dashbox" href="#">
-                <i class="icon-fa icon-fa-shopping-cart text-danger"></i>
+                <i class="icon-fa icon-fa-ship text-danger"></i>
                 <span class="title">
                     {{ $shipments }}
                 </span>
