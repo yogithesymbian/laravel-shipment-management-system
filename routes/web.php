@@ -1,5 +1,6 @@
 <?php
 use Laraspace\Pengirim;
+use Laraspace\Tracking;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,7 +15,17 @@ Route::get('/', [
 ]);
 
 Route::get('api1', function () {
-    echo Pengirim::with('trackings')->get();
+    $pengirim = Pengirim::find('PRM1706001');
+    // dd($pengirim->trackings());
+    // dd($pengirim->trackings()->get());
+    $trackings = $pengirim->trackings()->get();
+    foreach ($trackings as $tracking) {
+        $data[] = [
+            'nama_pengirim' => $tracking->pengirim,
+            'tgl_pengiriman' => $tracking->tgl_pengiriman
+        ];
+    }
+    return $data;
 });
 
 /*
@@ -41,13 +52,6 @@ Route::group([
         'as' => 'admin.dashboard.basic', 'uses' => 'DashboardController@basic'
     ]);
 
-    Route::get('/dashboard/ecommerce', [
-        'as' => 'admin.dashboard.ecommerce', 'uses' => 'DashboardController@ecommerce'
-    ]);
-
-    Route::get('/dashboard/finance', [
-        'as' => 'admin.dashboard.finance', 'uses' => 'DashboardController@finance'
-    ]);
 
     // Layouts
     //----------------------------------

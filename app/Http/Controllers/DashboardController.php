@@ -20,11 +20,13 @@ class DashboardController extends Controller
         $pendings = Tracking::where(['keterangan' => 'pending'])->count();
         $shipments = Tracking::where(['keterangan' => 'terkirim'])->count();
         $pengirims = Pengirim::all();
+        $trackings = Tracking::all();
         // laters array
         return view('admin.dashboard.basic')
             ->with('pendings', $pendings)
             ->with('shipments', $shipments)
             ->with('pengirims', $pengirims)
+            ->with('trackings', $trackings)
             // end
         ;
     }

@@ -42,23 +42,33 @@ return [
             ]
         ],
         [
-            'title' => 'Layouts',
+            'title' => 'Form Client',
             'link' => '#',
             'active' => 'admin/layouts*',
             'icon' => 'icon-fa icon-fa-th-large',
             'children' => [
                 [
-                    'title' => 'Sidebar',
+                    'title' => 'Create Pengirim',
                     'link' => '/admin/layouts/sidebar',
                     'active' => 'admin/layouts/sidebar',
                 ],
                 [
-                    'title' => 'Icon Sidebar',
+                    'title' => 'Create Barang',
                     'link' => '/admin/layouts/icon-sidebar',
                     'active' => 'admin/layouts/icon-sidebar',
                 ],
                 [
-                    'title' => 'Horizontal Menu',
+                    'title' => 'Create Penerima',
+                    'link' => '/admin/layouts/horizontal-menu',
+                    'active' => 'admin/layouts/horizontal-menu',
+                ],
+                [
+                    'title' => 'Create Jenis Pengiriman',
+                    'link' => '/admin/layouts/horizontal-menu',
+                    'active' => 'admin/layouts/horizontal-menu',
+                ],
+                [
+                    'title' => 'Create Tarif',
                     'link' => '/admin/layouts/horizontal-menu',
                     'active' => 'admin/layouts/horizontal-menu',
                 ]

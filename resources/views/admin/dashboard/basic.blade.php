@@ -93,7 +93,6 @@
                             @foreach ($pengirims as $pengirim)
                             <tr>
                                 <td> {{ $pengirim->nama_pengirim }} </td>
-                                <td> </td>
                                 <td> 555$ </td>
                                 <td><a href="#" class="btn btn-default btn-xs">View</a></td>
                                 {{-- <td>Walter White</td>
