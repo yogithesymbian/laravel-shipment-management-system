@@ -180,6 +180,14 @@ Route::group([
         ]);
     });
 
+    // Form Data Master
+    // ---------------------------------
+    Route::group(['prefix' => 'datamaster'], function () {
+        Route::get('view', [
+            'as' => 'admin.datamaster.view', 'uses' => 'Demo\DatamasterController@view'
+        ]);
+    });
+
     // Form Components
     //----------------------------------
 
@@ -197,8 +205,16 @@ Route::group([
             'as' => 'admin.forms.layouts', 'uses' => 'Demo\PagesController@layouts'
         ]);
 
-        Route::get('validation', [
-            'as' => 'admin.forms.validation', 'uses' => 'Demo\PagesController@validation'
+        // Route::get('validation', [
+        //     'as' => 'admin.forms.validation', 'uses' => 'Demo\PagesController@validation'
+        // ]);
+
+        Route::get('jenispengiriman', [
+            'as' => 'admin.forms.jenispengiriman', 'uses' => 'Demo\JenispengirimController@create'
+        ]);
+
+        Route::post('jenispengiriman', [
+            'as' => 'admin.forms.jenispengiriman', 'uses' => 'Demo\JenispengirimController@store'
         ]);
 
         Route::get('editors', [

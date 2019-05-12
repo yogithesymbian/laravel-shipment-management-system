@@ -4,10 +4,13 @@ namespace Laraspace\Http\Controllers\Demo;
 
 use Illuminate\Http\Request;
 use Laraspace\Http\Controllers\Controller;
-use Laraspace\Tb_jns_pengiriman;
 
-class JenispengirimController extends Controller
+class DatamasterController extends Controller
 {
+    public function view()
+    {
+        return view('admin.pages.datamaster.view');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -25,7 +28,7 @@ class JenispengirimController extends Controller
      */
     public function create()
     {
-        return view('admin.pages.forms.jenispengiriman');
+        //
     }
 
     /**
@@ -36,16 +39,7 @@ class JenispengirimController extends Controller
      */
     public function store(Request $request)
     {
-        // code
-        $jenispengiriman = new Tb_jns_pengiriman();
-        $data = $this->validate($request, [
-            'kd_pengiriman' => 'required',
-            'nm_jns_pengiriman' => 'required',
-            'harga_per_km' => 'required'
-        ]);
-        $jenispengiriman->saveJenispengiriman($data);
-        // return redirect()->action('${App\Http\Controllers\HomeController@index}', ['parameterKey' => 'value']);
-        return redirect('/admin/datamaster/view')->with('success', 'New support type sending has been created! Wait sometime to get resolved');
+        //
     }
 
     /**

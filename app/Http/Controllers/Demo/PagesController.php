@@ -156,10 +156,10 @@ class PagesController extends Controller
         return view('admin.pages.forms.layouts');
     }
 
-    public function validation()
-    {
-        return view('admin.pages.forms.validation');
-    }
+    // public function validation()
+    // {
+    //     return view('admin.pages.forms.validation');
+    // }
 
     public function editors()
     {

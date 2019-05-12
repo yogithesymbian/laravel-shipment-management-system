@@ -28,16 +28,20 @@ return [
                     'active' => 'admin/dashboard/basic',
                 ],
                 [
-                    'title' => 'Ecommerce',
+                    'title' => 'Ecommerce ✗',
+                    'link' => '/admin/forms/wizards-2',
+                    'active' => 'admin/forms/wizards-2',
                     // 'link' => '/admin/dashboard/ecommerce',
-                    'link' => '/admin/dashboard/#',
-                    'active' => 'admin/dashboard/ecommerce',
+                    // 'link' => '/admin/dashboard/#',
+                    // 'active' => 'admin/dashboard/ecommerce',
                 ],
                 [
-                    'title' => 'Finance',
+                    'title' => 'Finance ✗',
+                    'link' => '/admin/forms/wizards-2',
+                    'active' => 'admin/forms/wizards-2',
                     // 'link' => '/admin/dashboard/finance',
-                    'link' => '/admin/dashboard/#',
-                    'active' => 'admin/dashboard/finance',
+                    // 'link' => '/admin/dashboard/#',
+                    // 'active' => 'admin/dashboard/finance',
                 ]
             ]
         ], [
@@ -47,49 +51,51 @@ return [
             'icon' => 'icon-fa icon-fa-rocket',
             'children' => [
                 [
-                    'title' => 'Form Pengirim',
+                    'title' => 'Form Pengirim ✗',
                     'link' => '/admin/forms/general',
                     'active' => 'admin/forms/general',
                 ],
                 [
-                    'title' => 'Form Barang',
+                    'title' => 'Form Barang ✗',
                     'link' => '/admin/forms/advanced',
                     'active' => 'admin/forms/advanced',
                 ],
                 [
-                    'title' => 'Form Penerima',
+                    'title' => 'Form Penerima ✗',
                     'link' => '/admin/forms/layouts',
                     'active' => 'admin/forms/layouts',
                 ],
                 [
                     'title' => 'Form Jenis Pengiriman',
-                    'link' => '/admin/forms/validation',
-                    'active' => 'admin/forms/validation',
+                    'link' => '/admin/forms/jenispengiriman',
+                    'active' => 'admin/forms/jenispengiriman',
+                    // 'link' => '/admin/forms/validation',
+                    // 'active' => 'admin/forms/validation',
                 ],
                 [
-                    'title' => 'Form Tarif',
+                    'title' => 'Form Tarif ✗',
                     'link' => '/admin/forms/wizards',
                     'active' => 'admin/forms/wizards',
                 ],
                 [
-                    'title' => 'Form Wizard 2',
+                    'title' => 'Form Wizard 2 ✗',
                     'link' => '/admin/forms/wizards-2',
                     'active' => 'admin/forms/wizards-2',
                 ],
                 [
-                    'title' => 'Form Wizard 3',
+                    'title' => 'Form Wizard 3 ✗',
                     'link' => '/admin/forms/wizards-3',
                     'active' => 'admin/forms/wizards-3',
                 ],
                 [
-                    'title' => 'Editors',
+                    'title' => 'Editors ✗',
                     'link' => '/admin/forms/editors',
                     'active' => 'admin/forms/editors',
                 ],
             ]
         ],
         [
-            'title' => 'Form Client',
+            'title' => 'Data Master',
             'link' => '#',
             'active' => 'admin/layouts*',
             'icon' => 'icon-fa icon-fa-th-large',
@@ -105,9 +111,11 @@ return [
                     'active' => 'admin/layouts/icon-sidebar',
                 ],
                 [
-                    'title' => 'Create Penerima',
-                    'link' => '/admin/layouts/horizontal-menu',
-                    'active' => 'admin/layouts/horizontal-menu',
+                    'title' => 'View',
+                    'link' => '/admin/datamaster/view',
+                    'active' => 'admin/datamaster/view',
+                    // 'link' => '/admin/layouts/horizontal-menu',
+                    // 'active' => 'admin/layouts/horizontal-menu',
                 ],
                 [
                     'title' => 'Create Jenis Pengiriman',
@@ -439,41 +447,41 @@ return [
             ]
         ],
         [
-            'title' => 'Layouts',
+            'title' => 'Forms Client',
             'link' => '#',
             'active' => 'admin/layouts*',
             'icon' => 'icon-fa icon-fa-th-large',
             'children' => [
                 [
-                    'title' => 'Sidebar',
+                    'title' => 'Form Pengirim',
                     'link' => '/admin/layouts/sidebar',
                     'active' => 'admin/layouts/sidebar',
                 ],
                 [
-                    'title' => 'Icon Sidebar',
+                    'title' => 'Form Barang',
                     'link' => '/admin/layouts/icon-sidebar',
                     'active' => 'admin/layouts/icon-sidebar',
                 ],
                 [
-                    'title' => 'Horizontal Menu',
+                    'title' => 'Horizontal Penerima',
                     'link' => '/admin/layouts/horizontal-menu',
                     'active' => 'admin/layouts/horizontal-menu',
                 ],
             ]
         ],
         [
-            'title' => 'Basic UI',
+            'title' => 'Data Master',
             'link' => '#',
             'active' => 'admin/basic-ui*',
             'icon' => 'icon-fa icon-fa-star',
             'children' => [
                 [
-                    'title' => 'Buttons',
+                    'title' => 'View',
                     'link' => '/admin/basic-ui/buttons',
                     'active' => 'admin/basic-ui/buttons',
                 ],
                 [
-                    'title' => 'Cards',
+                    'title' => 'Update',
                     'link' => '/admin/basic-ui/cards',
                     'active' => 'admin/basic-ui/cards',
                 ],
