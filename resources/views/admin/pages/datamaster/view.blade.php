@@ -13,7 +13,7 @@
         <div class="card-body">
             <div class="row">
                 <div class="col-xl-6 mb-4">
-                    <h5 class="section-semi-title">Default Table</h5>
+                    <h5 class="section-semi-title">Data Pengirim Table</h5>
 
                     <p>This is just a Simple Bootstrap style table. To use this just apply
                         <mark>.table</mark>
@@ -23,10 +23,10 @@
                         <thead>
                             <tr>
                                 <th>#</th>
-                                <th>Product Name</th>
-                                <th>Status</th>
-                                <th>Price</th>
-                                <th>MRP</th>
+                                <th>Nama Pengirim</th>
+                                <th>Alamat</th>
+                                <th>Telephone</th>
+                                <th>Created at</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -76,7 +76,7 @@
                     </table>
                 </div>
                 <div class="col-xl-6 mb-4">
-                    <h5 class="section-semi-title">Bordered Table</h5>
+                    <h5 class="section-semi-title">Jenis Pengiriman Table</h5>
 
                     <p>To use this just apply
                         <mark>.table</mark>
@@ -88,10 +88,9 @@
                         <thead>
                             <tr>
                                 <th>#</th>
-                                <th>Product Name</th>
-                                <th>Status</th>
-                                <th>Price</th>
-                                <th>MRP</th>
+                                <th>Kode Pengiriman</th>
+                                <th>Nama Jenis Pengiriman</th>
+                                <th>Harga Per KM</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -100,48 +99,42 @@
                                 <td>Colgate Toothpaste</td>
                                 <td><span class="label label-success">in stock</span></td>
                                 <td>$5</td>
-                                <td>$6</td>
                             </tr>
                             <tr>
                                 <td>2</td>
                                 <td>Pink T-Shirt</td>
                                 <td><span class="label label-danger">out of stock</span></td>
                                 <td>$20</td>
-                                <td>$40</td>
                             </tr>
                             <tr>
                                 <td>3</td>
                                 <td>Nike Running Shoes</td>
                                 <td><span class="label label-success">in stock</span></td>
                                 <td>$100</td>
-                                <td>$120</td>
                             </tr>
                             <tr>
                                 <td>4</td>
                                 <td>Reebok Casual Shoes</td>
                                 <td><span class="label label-danger">out of stock</span></td>
                                 <td>$70</td>
-                                <td>$80</td>
                             </tr>
                             <tr>
                                 <td>5</td>
                                 <td>Titan Raga Premium Watch</td>
                                 <td><span class="label label-success">in stock</span></td>
                                 <td>$100</td>
-                                <td>$120</td>
                             </tr>
                             <tr>
                                 <td>6</td>
                                 <td>Philips Hair Remover</td>
                                 <td><span class="label label-danger">out of stock</span></td>
                                 <td>$50</td>
-                                <td>$70</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
                 <div class="col-xl-6 mb-4">
-                    <h5 class="section-semi-title">Hover Table</h5>
+                    <h5 class="section-semi-title">Data Barang Table</h5>
 
                     <p>To use this just apply
                         <mark>.table</mark>
@@ -153,10 +146,10 @@
                         <thead>
                             <tr>
                                 <th>#</th>
-                                <th>Product Name</th>
-                                <th>Status</th>
-                                <th>Price</th>
-                                <th>MRP</th>
+                                <th>Jenis Barang</th>
+                                <th>Berat Barang</th>
+                                <th>Pengirim</th>
+                                <th>Jumlah PCS</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -206,7 +199,7 @@
                     </table>
                 </div>
                 <div class="col-xl-6 mb-4">
-                    <h5 class="section-semi-title">Striped Table</h5>
+                    <h5 class="section-semi-title">Data Penerima Table</h5>
 
                     <p>To use this just apply
                         <mark>.table</mark>
@@ -218,10 +211,10 @@
                         <thead>
                             <tr>
                                 <th>#</th>
-                                <th>Product Name</th>
-                                <th>Status</th>
-                                <th>Price</th>
-                                <th>MRP</th>
+                                <th>Name</th>
+                                <th>Alamat</th>
+                                <th>Telephone</th>
+                                <th>Created at</th>
                             </tr>
                         </thead>
                         <tbody>

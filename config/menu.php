@@ -101,36 +101,36 @@ return [
             'icon' => 'icon-fa icon-fa-th-large',
             'children' => [
                 [
-                    'title' => 'Create Pengirim',
+                    'title' => 'Create Lorem ✗',
                     'link' => '/admin/layouts/sidebar',
                     'active' => 'admin/layouts/sidebar',
                 ],
                 [
-                    'title' => 'Create Barang',
+                    'title' => 'Create Ipsum Lorem ✗',
                     'link' => '/admin/layouts/icon-sidebar',
                     'active' => 'admin/layouts/icon-sidebar',
                 ],
                 [
-                    'title' => 'View',
+                    'title' => 'View ALL',
                     'link' => '/admin/datamaster/view',
                     'active' => 'admin/datamaster/view',
                     // 'link' => '/admin/layouts/horizontal-menu',
                     // 'active' => 'admin/layouts/horizontal-menu',
                 ],
                 [
-                    'title' => 'Create Jenis Pengiriman',
+                    'title' => 'Create Lorem Ipsum ✗',
                     'link' => '/admin/layouts/horizontal-menu',
                     'active' => 'admin/layouts/horizontal-menu',
                 ],
                 [
-                    'title' => 'Create Tarif',
+                    'title' => 'Lorem Ipsum ✗',
                     'link' => '/admin/layouts/horizontal-menu',
                     'active' => 'admin/layouts/horizontal-menu',
                 ]
             ]
         ],
         [
-            'title' => 'Basic UI',
+            'title' => 'Report Data',
             'link' => '#',
             'active' => 'admin/basic-ui*',
             'icon' => 'icon-fa icon-fa-star',
