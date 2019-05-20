@@ -1,6 +1,8 @@
 <?php
 use Laraspace\Pengirim;
 use Laraspace\Tracking;
+use Laraspace\Tb_jns_pengiriman;
+use Laraspace\Barang;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,6 +28,10 @@ Route::get('api1', function () {
         ];
     }
     return $data;
+});
+
+Route::get('test', function () {
+    echo Barang::all();
 });
 
 /*
@@ -189,13 +195,39 @@ Route::group([
     });
 
     // Form Components
+    // Forms Client
     //----------------------------------
 
     Route::group(['prefix' => 'forms'], function () {
 
-        Route::get('general', [
-            'as' => 'admin.forms.general', 'uses' => 'Demo\PagesController@general'
+        // Route::get('general', [
+        //     'as' => 'admin.forms.general', 'uses' => 'Demo\PagesController@general'
+        // ]);
+        Route::get('pengirim', [
+            'as' => 'admin.forms.pengirim', 'uses' => 'Demo\PengirimController@create'
         ]);
+
+        Route::post('pengirim', [
+            'as' => 'admin.forms.pengirim', 'uses' => 'Demo\PengirimController@store'
+        ]);
+
+        Route::get('barang', [
+            'as' => 'admin.forms.barang', 'uses' => 'Demo\BarangController@create'
+        ]);
+
+        Route::post('barang', [
+            'as' => 'admin.forms.barang', 'uses' => 'Demo\BarangController@store'
+        ]);
+
+        Route::get('manifest', [
+            'as' => 'admin.forms.manifest', 'uses' => 'Demo\ManifestController@create'
+        ]);
+
+        Route::post('manifest', [
+            'as' => 'admin.forms.manifest', 'uses' => 'Demo\ManifestController@store'
+        ]);
+
+
 
         Route::get('advanced', [
             'as' => 'admin.forms.advanced', 'uses' => 'Demo\PagesController@advanced'

@@ -18,6 +18,7 @@ class DashboardController extends Controller
          * count datas ['information goods']
          * had been send / still pending
          */
+        // $date = "{{ date('Y') }}";
         $pendings = Tracking::where(['keterangan' => 'pending'])->count();
         $shipments = Tracking::where(['keterangan' => 'terkirim'])->count();
         $manifests = Manifest::count();

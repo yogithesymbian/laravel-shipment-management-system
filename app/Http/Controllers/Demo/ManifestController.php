@@ -4,22 +4,9 @@ namespace Laraspace\Http\Controllers\Demo;
 
 use Illuminate\Http\Request;
 use Laraspace\Http\Controllers\Controller;
-use Laraspace\Tb_jns_pengiriman;
-use Laraspace\Pengirim;
-use Laraspace\Barang;
 
-class DatamasterController extends Controller
+class ManifestController extends Controller
 {
-    public function view()
-    {
-        $pengirims = Pengirim::all();
-        $barangs = Barang::all();
-        $jenispengirimans = Tb_jns_pengiriman::all();
-        return view('admin.pages.datamaster.view')
-            ->with('jenispengirimans', $jenispengirimans)
-            ->with('pengirims', $pengirims)
-            ->with('barangs', $barangs);
-    }
     /**
      * Display a listing of the resource.
      *
@@ -37,7 +24,7 @@ class DatamasterController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.pages.forms.manifest');
     }
 
     /**

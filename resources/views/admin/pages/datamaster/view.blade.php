@@ -30,48 +30,15 @@
                             </tr>
                         </thead>
                         <tbody>
+                            @foreach ($pengirims as $pengirim)
                             <tr>
                                 <td>1</td>
-                                <td>Colgate Toothpaste</td>
-                                <td><span class="label label-success">in stock</span></td>
-                                <td>$5</td>
-                                <td>$6</td>
+                                <td> {{ $pengirim->nama_pengirim }} </td>
+                                <td><span class="label label-success">{{ $pengirim->alamat_pengirim }}</span></td>
+                                <td> {{ $pengirim->no_telpon }} </td>
+                                <td> {{ $pengirim->created_at }} </td>
                             </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Pink T-Shirt</td>
-                                <td><span class="label label-danger">out of stock</span></td>
-                                <td>$20</td>
-                                <td>$40</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>Nike Running Shoes</td>
-                                <td><span class="label label-success">in stock</span></td>
-                                <td>$100</td>
-                                <td>$120</td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td>Reebok Casual Shoes</td>
-                                <td><span class="label label-danger">out of stock</span></td>
-                                <td>$70</td>
-                                <td>$80</td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td>Titan Raga Premium Watch</td>
-                                <td><span class="label label-success">in stock</span></td>
-                                <td>$100</td>
-                                <td>$120</td>
-                            </tr>
-                            <tr>
-                                <td>6</td>
-                                <td>Philips Hair Remover</td>
-                                <td><span class="label label-danger">out of stock</span></td>
-                                <td>$50</td>
-                                <td>$70</td>
-                            </tr>
+                            @endforeach
                         </tbody>
                     </table>
                 </div>
@@ -94,13 +61,17 @@
                             </tr>
                         </thead>
                         <tbody>
+                            @foreach ($jenispengirimans as $jenispengiriman)
                             <tr>
                                 <td>1</td>
-                                <td>Colgate Toothpaste</td>
-                                <td><span class="label label-success">in stock</span></td>
-                                <td>$5</td>
+                                <td> {{ $jenispengiriman->kd_pengiriman }} </td>
+                                <td><span class="label label-success"> {{ $jenispengiriman->nm_jns_pengiriman }} </span>
+                                </td>
+                                <td>Rp {{ $jenispengiriman->harga_per_km }} </td>
                             </tr>
-                            <tr>
+                            @endforeach
+
+                            {{-- <tr>
                                 <td>2</td>
                                 <td>Pink T-Shirt</td>
                                 <td><span class="label label-danger">out of stock</span></td>
@@ -129,7 +100,7 @@
                                 <td>Philips Hair Remover</td>
                                 <td><span class="label label-danger">out of stock</span></td>
                                 <td>$50</td>
-                            </tr>
+                            </tr> --}}
                         </tbody>
                     </table>
                 </div>
@@ -146,6 +117,7 @@
                         <thead>
                             <tr>
                                 <th>#</th>
+                                <th>ID Barang</th>
                                 <th>Jenis Barang</th>
                                 <th>Berat Barang</th>
                                 <th>Pengirim</th>
@@ -153,48 +125,17 @@
                             </tr>
                         </thead>
                         <tbody>
+                            @foreach ($barangs as $barang)
                             <tr>
                                 <td>1</td>
-                                <td>Colgate Toothpaste</td>
-                                <td><span class="label label-success">in stock</span></td>
-                                <td>$5</td>
-                                <td>$6</td>
+                                <td> {{ $barang->id_barang }} </td>
+                                <td> {{ $barang->jenis_barang }} </td>
+                                <td> {{ $barang->berat_barang }} </td>
+                                {{-- <td> {{ $barang->id_pengirim }} </td> --}}
+                                <td> <a href=" {{ asset('/') }} ">{{ $barang->id_pengirim }}</a> </td>
+                                <td> {{ $barang->jumlah_pcs }} </td>
                             </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Pink T-Shirt</td>
-                                <td><span class="label label-danger">out of stock</span></td>
-                                <td>$20</td>
-                                <td>$40</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>Nike Running Shoes</td>
-                                <td><span class="label label-success">in stock</span></td>
-                                <td>$100</td>
-                                <td>$120</td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td>Reebok Casual Shoes</td>
-                                <td><span class="label label-danger">out of stock</span></td>
-                                <td>$70</td>
-                                <td>$80</td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td>Titan Raga Premium Watch</td>
-                                <td><span class="label label-success">in stock</span></td>
-                                <td>$100</td>
-                                <td>$120</td>
-                            </tr>
-                            <tr>
-                                <td>6</td>
-                                <td>Philips Hair Remover</td>
-                                <td><span class="label label-danger">out of stock</span></td>
-                                <td>$50</td>
-                                <td>$70</td>
-                            </tr>
+                            @endforeach
                         </tbody>
                     </table>
                 </div>

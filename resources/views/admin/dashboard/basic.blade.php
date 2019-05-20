@@ -90,17 +90,22 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($pengirims as $pengirim)
+                            @foreach ($trackings as $tracking)
                             <tr>
-                                <td> {{ $pengirim->nama_pengirim }} </td>
-                                <td> 555$ </td>
+                                <td> {{ $tracking->pengirim->nama_pengirim }} </td>
+                                <td> {{ $tracking->pengirim->created_at }} </td>
+                                <td> {{ $tracking->tarif->total }} </td>
                                 <td><a href="#" class="btn btn-default btn-xs">View</a></td>
-                                {{-- <td>Walter White</td>
-                                <td>05/12/2016</td>
-                                <td>555$</td>
-                                <td><a href="#" class="btn btn-default btn-xs">View</a></td> --}}
                             </tr>
                             @endforeach
+                            {{-- @foreach ($pengirims as $pengirim)
+                            <tr>
+                                <td> {{ $pengirim->nama_pengirim }} </td>
+                            <td> {{ $pengirim->created_at }} </td>
+                            <td> {{ $pengirim->trackings }} </td>
+                            <td><a href="#" class="btn btn-default btn-xs">View</a></td>
+                            </tr>
+                            @endforeach --}}
                         </tbody>
                     </table>
                 </div>
@@ -116,24 +121,18 @@
                         <thead>
                             <tr>
                                 <th>Customer Name</th>
-                                <th>Date</th>
-                                <th>Amount</th>
+                                <th>Phone</th>
                                 <th>Actions</th>
                             </tr>
                         </thead>
                         <tbody>
+                            @foreach ($pengirims as $pengirim)
                             <tr>
-                                <td>Walter White</td>
-                                <td>05/12/2016</td>
-                                <td>555$</td>
+                                <td> {{ $pengirim->nama_pengirim }} </td>
+                                <td> {{ $pengirim->no_telpon }} </td>
                                 <td><a href="#" class="btn btn-default btn-xs">View</a></td>
                             </tr>
-                            <tr>
-                                <td>Hank Hill</td>
-                                <td>05/12/2016</td>
-                                <td>222$</td>
-                                <td><a href="#" class="btn btn-default btn-xs">View</a></td>
-                            </tr>
+                            @endforeach
                         </tbody>
                     </table>
                 </div>

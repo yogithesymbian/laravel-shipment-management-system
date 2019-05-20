@@ -4,22 +4,11 @@ namespace Laraspace\Http\Controllers\Demo;
 
 use Illuminate\Http\Request;
 use Laraspace\Http\Controllers\Controller;
-use Laraspace\Tb_jns_pengiriman;
-use Laraspace\Pengirim;
 use Laraspace\Barang;
+use Laraspace\Pengirim;
 
-class DatamasterController extends Controller
+class BarangController extends Controller
 {
-    public function view()
-    {
-        $pengirims = Pengirim::all();
-        $barangs = Barang::all();
-        $jenispengirimans = Tb_jns_pengiriman::all();
-        return view('admin.pages.datamaster.view')
-            ->with('jenispengirimans', $jenispengirimans)
-            ->with('pengirims', $pengirims)
-            ->with('barangs', $barangs);
-    }
     /**
      * Display a listing of the resource.
      *
@@ -37,7 +26,8 @@ class DatamasterController extends Controller
      */
     public function create()
     {
-        //
+        $pengirims = Pengirim::all();
+        return view('admin.pages.forms.barang')->with('pengirims', $pengirims);
     }
 
     /**
@@ -48,7 +38,16 @@ class DatamasterController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $barang = new Barang();
+        $data = $this->validate($request, [
+            'id_barang' => 'required',
+            'jenis_barang' => 'required',
+            'berat_barang' => 'required',
+            'id_pengirim' => 'required',
+            'jumlah_pcs' => 'required'
+        ]);
+        $barang->saveBarang($data);
+        return redirect('/admin/datamaster/view')->with('success', 'New support barang has been created! Wait sometime to get resolved');
     }
 
     /**

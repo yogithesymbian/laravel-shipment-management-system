@@ -51,14 +51,14 @@ return [
             'icon' => 'icon-fa icon-fa-rocket',
             'children' => [
                 [
-                    'title' => 'Form Pengirim ✗',
-                    'link' => '/admin/forms/general',
-                    'active' => 'admin/forms/general',
+                    'title' => 'Form Pengirim',
+                    'link' => '/admin/forms/pengirim',
+                    'active' => 'admin/forms/pengirim',
                 ],
                 [
-                    'title' => 'Form Barang ✗',
-                    'link' => '/admin/forms/advanced',
-                    'active' => 'admin/forms/advanced',
+                    'title' => 'Form Barang',
+                    'link' => '/admin/forms/barang',
+                    'active' => 'admin/forms/barang',
                 ],
                 [
                     'title' => 'Form Penerima ✗',
@@ -78,9 +78,12 @@ return [
                     'active' => 'admin/forms/wizards',
                 ],
                 [
-                    'title' => 'Form Wizard 2 ✗',
-                    'link' => '/admin/forms/wizards-2',
-                    'active' => 'admin/forms/wizards-2',
+                    'title' => 'Form Manifest',
+                    'link' => '/admin/forms/manifest',
+                    'active' => 'admin/forms/manifest',
+                    // 'title' => 'Form Wizard 2 ✗',
+                    // 'link' => '/admin/forms/wizards-2',
+                    // 'active' => 'admin/forms/wizards-2',
                 ],
                 [
                     'title' => 'Form Wizard 3 ✗',
@@ -454,18 +457,17 @@ return [
             'children' => [
                 [
                     'title' => 'Form Pengirim',
-                    'link' => '/admin/layouts/sidebar',
-                    'active' => 'admin/layouts/sidebar',
-                ],
-                [
+                    'link' => '/admin/forms/pengirim',
+                    'active' => 'admin/forms/pengirim',
+                ], [
                     'title' => 'Form Barang',
-                    'link' => '/admin/layouts/icon-sidebar',
-                    'active' => 'admin/layouts/icon-sidebar',
+                    'link' => '/admin/forms/barang',
+                    'active' => 'admin/forms/barang',
                 ],
                 [
-                    'title' => 'Horizontal Penerima',
-                    'link' => '/admin/layouts/horizontal-menu',
-                    'active' => 'admin/layouts/horizontal-menu',
+                    'title' => 'Form Jenis Pengiriman',
+                    'link' => '/admin/forms/jenispengiriman',
+                    'active' => 'admin/forms/jenispengiriman',
                 ],
             ]
         ],
